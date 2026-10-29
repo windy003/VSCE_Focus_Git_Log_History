@@ -1,0 +1,33 @@
+{
+  "name": "cursor-git-history-focus",
+  "displayName": "Git History Focus",
+  "description": "按 Alt+Shift+G 聚焦 Cursor 的 Git 历史记录面板（Source Control Graph）",
+  "version": "1.0.0",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:gitHistoryFocus.focus"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitHistoryFocus.focus",
+        "title": "聚焦 Git 历史记录面板",
+        "category": "Git History Focus"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gitHistoryFocus.focus",
+        "key": "shift+alt+g"
+      }
+    ]
+  }
+}
