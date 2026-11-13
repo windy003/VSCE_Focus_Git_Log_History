@@ -2,7 +2,7 @@
   "name": "cursor-git-history-focus",
   "displayName": "Git History Focus",
   "description": "按 Alt+Shift+G 聚焦 Cursor 的 Git 历史记录面板（Source Control Graph），再次按下可查看所选提交的完整详情",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "local",
   "license": "MIT",
   "engines": {
@@ -38,6 +38,11 @@
       {
         "command": "gitHistoryFocus.showDetails",
         "key": "shift+alt+g",
+        "when": "focusedView == 'workbench.scm.history'"
+      },
+      {
+        "command": "gitHistoryFocus.showDetails",
+        "key": "right",
         "when": "focusedView == 'workbench.scm.history'"
       }
     ]
